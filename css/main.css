@@ -39,8 +39,6 @@ main {
     color: var(--navy);
     position: relative;
     z-index: 2;
-    /* text-align: center; */
-    /* transform: translateX(-50px); */
 }
 
 .intro p, h1 {
@@ -66,7 +64,6 @@ strong {
     filter: invert(100%) opacity(30%);
     z-index: 1;
     margin: 0 auto;
-    /* transform: translateX(50px); */
     width: 80vw;
     max-width: 800px;
     /* mix-blend-mode: multiply; */
