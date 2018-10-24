@@ -3,4 +3,27 @@
     --white: #E7E5E5;
     --navy: #383C58;
     --blue: #8FDAD6;
+    font-family: 'Krub', sans-serif;
+}
+
+html {
+    background-image: linear-gradient(120deg, #8FDAD6 0%, #383C58 100%);
+}
+
+.intro {
+    background-color: var(--navy);
+    width: 300px;
+    padding: 10px;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+.gallery img {
+    height: 200px;
 }
