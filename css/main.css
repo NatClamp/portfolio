@@ -13,8 +13,37 @@ html {
     min-height: 100vh;
 }
 
-nav, .intro {
+/* GENERAL */
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+    filter: saturation(30%) opacity(40%);
+}
+
+
+button, button a {
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-size: 1rem;
+    background-color: var(--navy);
+    transition-duration: 0.4s;
+    color: var(--white);
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 2px var(--white);
+}
+
+button:hover {
+    filter: brightness(80%)
+}
+
+.serif {
     font-family: 'Krub', sans-serif;
+}
+
+.sansserif {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* NAVIGATION BAR */
@@ -47,7 +76,7 @@ main {
     z-index: 2;
 }
 
-.intro p, h1 {
+section.intro p, h1.name {
     margin: 0;
     padding: 0 20px;
 }
@@ -72,13 +101,6 @@ h1 strong {
     margin: 0 auto;
     width: 80vw;
     max-width: 800px;
-}
-
-/* GENERAL */
-
-a {
-    text-decoration: none;
-    color: var(--navy);
 }
 
 /* MEDIA QUERIES */
@@ -113,30 +135,29 @@ a {
 
 /* ABOUT ME PAGE */
 
-.me {
-    font-family: 'Roboto', sans-serif;
-}
-
 section.aboutme {
     display: flex;
-    justify-content: space-evenly;
-    /* height: 80vh; */
-    width: 1000px;
-    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 50px auto;
     color: var(--navy);
 }
 
-section.experience {
-    border: 3px solid var(--green);
-    width: 500px;
-    padding: 10px;
-}
-
 section.bio {
-    border: 3px solid var(--green);
     text-align: justify;
     width: 500px;
     padding: 10px;
 }
 
+h1.greeting, h1.contact {
+    font-size: 2rem;
+    line-height: 0.5em;
+    padding: 10px 0;
+}
 
+img.portrait {
+    height: 600px;
+    border-radius: 50%;
+    margin: 50px 0 0 0;
+}
