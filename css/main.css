@@ -3,7 +3,7 @@
     --white: #E7E5E5;
     --navy: #383C58;
     --blue: #8FDAD6;
-    font-family: 'Krub', sans-serif;
+    
 }
 
 /* GRADIENT BACKGROUND */
@@ -11,6 +11,10 @@
 html {
     background-image: linear-gradient(120deg, #8FDAD6 0%, #383C58 100%);
     min-height: 100vh;
+}
+
+nav, .intro {
+    font-family: 'Krub', sans-serif;
 }
 
 /* NAVIGATION BAR */
@@ -80,23 +84,16 @@ a {
 /* MEDIA QUERIES */
 /* for transforming text */
 
-
 @media only screen and (min-width: 750px) {
     .nav a {
         font-size: 1.25rem;
     }
-    .name {
+    section.intro h1.name {
         font-size: 80px;
     }
-    .tag {
+    section.intro p.tag {
         font-size: 24px;
     }
-    /* .intro {
-        transform: translateX(-75px);
-    }
-    .logo {
-        transform: translateX(75px);
-    } */
 }
 
 @media only screen and (min-width: 1000px) {
@@ -107,7 +104,7 @@ a {
         transform: translateX(-150px);
     }
     .tag {
-        transform: translateX(100px)
+        transform: translateX(100px);
     }
     .logo {
         transform: translateX(150px);
